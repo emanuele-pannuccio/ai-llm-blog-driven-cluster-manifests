@@ -1,0 +1,3 @@
+resources:
+  - crb-devops.yaml
+  - crb-gh-actions.yaml

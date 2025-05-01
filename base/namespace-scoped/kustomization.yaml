@@ -1,0 +1,4 @@
+resources:
+  - ./ingress-gateway
+  - ./blog-fe
+  - ./blog-be

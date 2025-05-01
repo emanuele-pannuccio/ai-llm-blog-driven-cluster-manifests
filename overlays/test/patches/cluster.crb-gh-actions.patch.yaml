@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=false
+# yaml-language-server: disableValidation=true
+
+- op: replace
+  path: /subjects/0/name
+  value: autoblog-test-gh-sa@gcp-automated-blog-test.iam.gserviceaccount.com

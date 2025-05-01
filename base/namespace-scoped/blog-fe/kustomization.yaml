@@ -1,0 +1,3 @@
+namespace: blog-fe
+resources:
+  - ./route.yaml

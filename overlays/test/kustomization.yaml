@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://kubernetes-schemas.dev/schema/kustomization.json
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+patches:
+  - path: ./patches/cluster.crb-gh-actions.patch.yaml
+    target:
+      kind: ClusterRoleBinding
+      name: crb-admin-deploy-sa
+
+  # - path: ./patches/blog-be.route.patch.yaml
+  #   target:
+  #     kind: HTTPRoute
+  #     name: blog-be-httproute
+  #     namespace: blog-be
+
+  - path: ./patches/blog-fe.route.patch.yaml
+    target:
+      kind: HTTPRoute
+      name: blog-fe-httproute
+      namespace: blog-fe

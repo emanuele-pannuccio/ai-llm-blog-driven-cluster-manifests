@@ -1,0 +1,4 @@
+resources:
+  - blog-be.yaml
+  - blog-fe.yaml
+  - ingress-gateway.yaml

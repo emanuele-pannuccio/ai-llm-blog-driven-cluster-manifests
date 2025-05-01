@@ -1,0 +1,3 @@
+resources:
+  - cluster-scoped
+  - namespace-scoped

@@ -1,0 +1,26 @@
+kind: HTTPRoute
+apiVersion: gateway.networking.k8s.io/v1beta1
+metadata:
+  name: blog-fe-httproute
+spec:
+  parentRefs:
+  - kind: Gateway
+    name: external-http-gateway
+    namespace: ingress-gateway
+  hostnames: []
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: blog-fe-service
+      port: 8080
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /api
+    backendRefs:
+    - name: blog-be-service
+      namespace: blog-be
+      port: 8080
