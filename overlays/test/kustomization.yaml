@@ -12,11 +12,11 @@ patches:
       kind: ClusterRoleBinding
       name: crb-admin-deploy-sa
 
-  # - path: ./patches/blog-be.route.patch.yaml
-  #   target:
-  #     kind: HTTPRoute
-  #     name: blog-be-httproute
-  #     namespace: blog-be
+  - path: ./patches/ingress-gateway.gateway.patch.yaml
+    target:
+      kind: Gateway
+      name: external-http-gateway
+      namespace: ingress-gateway
 
   - path: ./patches/blog-fe.route.patch.yaml
     target:

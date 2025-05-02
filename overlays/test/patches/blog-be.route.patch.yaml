@@ -1,4 +1,0 @@
-- op: add
-  path: /spec/hostnames
-  value:
-  - "34.8.250.66.nip.io"
