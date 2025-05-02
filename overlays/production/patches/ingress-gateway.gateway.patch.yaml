@@ -1,0 +1,4 @@
+- op: add
+  path: /spec/listeners/0/tls/options
+  value:
+    networking.gke.io/pre-shared-certs: autoblog-prod-ssl-cert
