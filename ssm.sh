@@ -1,0 +1,3 @@
+# aws ssm start-session --target i-00e751e0d0668136d --document-name AWS-StartPortForwardingSessionToRemoteHost --region eu-west-1 --parameters '{"host":["autoblog-test-db.cdm00oci41gf.eu-west-1.rds.amazonaws.com"], "portNumber":["3306"], "localPortNumber":["3306"]}'
+
+aws ssm start-session --target i-00e751e0d0668136d --document-name AWS-StartPortForwardingSessionToRemoteHost --region eu-west-1 --parameters '{"host":["b-29f0b38e-57c4-4c1b-8a8a-b57868379b9e.mq.eu-west-1.on.aws"], "portNumber":["443"], "localPortNumber":["8445"]}'
